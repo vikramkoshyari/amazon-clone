@@ -10,7 +10,7 @@ function Product(props) {
       type: "ADD_TO_BASKET",
       item: {
         id: props.id,
-        titlle: props.title,
+        title: props.title,
         img: props.img,
         price: props.price,
         rating: props.rating,
