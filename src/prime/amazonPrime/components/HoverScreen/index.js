@@ -30,7 +30,7 @@ const HoverScreen = ({ item, api_key, media_type }) => {
   return (
     <div className="hoverScreen">
       <Link
-        to={`/${media_type}?id=${item.id}`}
+        to={`/${media_type}?id=${item.id}&media=${media_type}`}
         style={{ textDecoration: "none", color: "white" }}
       >
         <img

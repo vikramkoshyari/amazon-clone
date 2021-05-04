@@ -39,6 +39,7 @@ const Movie = ({ api_key }) => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const movie_id = urlParams.get("id");
+  const media = urlParams.get("media");
 
   const image_base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -290,6 +291,7 @@ const Movie = ({ api_key }) => {
               heading="Customers also watched"
               moveCount="movie10"
               API_KEY={api_key}
+              media_type={media}
               fetchURL={`https://api.themoviedb.org/3/movie/${movieDetails.id}/similar?api_key=${api_key}&language=en-US&page=1`}
             />
           ) : (

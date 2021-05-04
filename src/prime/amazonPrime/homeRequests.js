@@ -16,11 +16,11 @@ const homeRequests = [
     url: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
     media: "movie",
   },
-  {
-    title: "Adventure TV Shows",
-    url: `/discover/tv?api_key=${API_KEY}&with_genres=12`,
-    media: "tv",
-  },
+  // {
+  //   title: "Adventure TV Shows",
+  //   url: `/discover/tv?api_key=${API_KEY}&with_genres=12`,
+  //   media: "tv",
+  // },
   {
     title: "Popular in your Region TV Shows",
     url: `/discover/tv?api_key=${API_KEY}&region=IN`,

@@ -14,6 +14,7 @@ const MediaScreen = ({
   moveCount,
   media_type,
 }) => {
+  // console.log("heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",media_type);
   const [data, setData] = useState([]);
   const base_url = "https://image.tmdb.org/t/p/original/";
   var count = 0;

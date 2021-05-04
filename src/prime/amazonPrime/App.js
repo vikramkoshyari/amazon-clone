@@ -49,6 +49,7 @@ function App() {
               <Header />
               <AllContent API_KEY={api_key} />
             </Route>
+
             <Route
               exact
               path="/movie"
@@ -56,6 +57,7 @@ function App() {
               <Header />
               <Movie api_key={api_key} />
             </Route>
+
             <Route
               path="/prime"
             >
@@ -66,12 +68,23 @@ function App() {
                 slideShowUrl="https://api.themoviedb.org/3/trending/all/day"
               />
             </Route>
+
             <Route path="/tv" >
               <Header />
               <TV api_key={api_key} />
             </Route>
-            <Route path='/'>
+
+            <Route path='/amazon'>
               <Amazon/>
+            </Route>
+
+            <Route path='/'>
+              <Header />
+              <Home
+                api_key={api_key}
+                requests={homeRequests}
+                slideShowUrl="https://api.themoviedb.org/3/trending/all/day"
+              />
             </Route>
 
 
