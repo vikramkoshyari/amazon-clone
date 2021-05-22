@@ -50,7 +50,7 @@ const Header = () => {
           </div>
         </div>
         <div>
-            <Link to = '/amazon' className="arrow">
+            <Link to = '/' className="arrow">
               <ArrowForwardIcon className="account" fontSize="large"  />
             </Link>
         </div>

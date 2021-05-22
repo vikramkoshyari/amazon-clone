@@ -40,10 +40,11 @@ const Movie = ({ api_key }) => {
   const urlParams = new URLSearchParams(window.location.search);
   const movie_id = urlParams.get("id");
   const media = urlParams.get("media");
-
   const image_base_url = "https://image.tmdb.org/t/p/original/";
 
   useEffect(() => {
+    console.log("hello i'm vikra working ///////////////////////////");
+
     async function fetchDetails() {
       const response = await axios.get(
         `${base_url}${movie_id}?api_key=${api_key}`
