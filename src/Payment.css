@@ -1,6 +1,6 @@
 .payment{
     background-color: white;
-    height:100vh;
+    height:200vh;
 }
 .payment__container > h1{
     text-align:center;
@@ -24,4 +24,17 @@
 }
 .payment__address, .payment__items, .payment__details{
     flex:0.8;
+}
+
+.payment__priceContainer{
+  margin-top: 20px
+}
+
+.buy{
+  margin-top: 20px
+}
+
+.payment__address{
+  resize: both;
+  overflow: auto
 }

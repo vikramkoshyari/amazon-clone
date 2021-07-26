@@ -1,6 +1,8 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import { Link } from "react-router-dom";
+
 
 function Product(props) {
   const [{ basket }, dispatch] = useStateValue();
@@ -18,10 +20,21 @@ function Product(props) {
     });
   };
 
+  const addProduct = () =>{
+    dispatch({
+      type: "ACTIVE_PRODUCT",
+      product: props
+    });
+  }
+
   return (
-    <div className="product">
+
+    <div className="product" onClick = {addProduct}>
+
       <div className="product__info">
-        <p>{props.title}</p>
+        <Link to = '/product_detail'>
+          <p class = 'product_title'>{props.title}</p>
+        </Link>
         <p className="product__price">
           <small>₹</small>
           <strong>{props.price}</strong>
@@ -35,7 +48,7 @@ function Product(props) {
         </div>
       </div>
       <img src={props.img} />
-      <button onClick={addToBasket}>Add To Basket</button>
+      <button onClick={addToBasket}>Add To Cart</button>
     </div>
   );
 }

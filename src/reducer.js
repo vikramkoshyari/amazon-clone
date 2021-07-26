@@ -1,13 +1,14 @@
 export const initialState = {
   basket: [],
   user: null,
+  product: null
 };
 
 export const getBasketTotal = (basket) =>
   basket.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
-
+console.log('===================',state);
   switch (action.type) {
 
     case "ADD_TO_BASKET":
@@ -49,6 +50,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         basket: []
+      }
+
+    case "ACTIVE_PRODUCT":
+      return {
+        ...state,
+        product: action.product
       }
 
     default:

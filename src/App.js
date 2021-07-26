@@ -11,6 +11,7 @@ import { useStateValue } from './StateProvider'
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import Orders from './Orders'
+import ProductDetail from './ProductDetail'
 
 import PrimeHeader from "./prime/amazonPrime/components/Header";
 import PrimeHome from "./prime/amazonPrime/components/Home/index";
@@ -67,7 +68,10 @@ function App() {
             <Elements stripe={promise}>
               <Payment />
             </Elements>
-
+          </Route>
+          <Route path="/product_detail">
+            <Header />
+            <ProductDetail/>
           </Route>
 
 
@@ -126,8 +130,6 @@ function App() {
             <PrimeHeader />
             <TV api_key={api_key} />
           </Route>
-
-
 
 
 

@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Cnnjpp/OnePlus_9Series/1/D22361055_OnePlus_9_Family_Design_SIM_Tall_hero_1500x600._CB670176272_.jpg"
+          src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/Events/Pug/Leadup21-page/Eng-Mobile/1348517_in_prime_mid_pd_1500x600._CB663332951_.jpg"
           alt=""
         />
         <div className="home__row">
@@ -18,6 +18,16 @@ function Home() {
             rating={5}
             price={24000}
             img="https://m.media-amazon.com/images/I/3100PYQXsVL.__AC_SY200_.jpg"
+            img1= "https://images-na.ssl-images-amazon.com/images/I/61D4Z3yKPAL._SX569_.jpg"
+            detail = "Category > Electronics > Headphone"
+            about = {['Digital noise cancelling: Industry leading Active Noise Cancellation (ANC) lends a personalized, virtually soundproof experience at any situation',
+            'Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for voice access to music, information and more. Activate with a simple touch',
+            'Speak-to-chat: Headphones use an array of smart technologies to create a seamless, hands-free listening experience. For eg, simply start speaking to automatically pause your music in Speak-to-Chat',
+            "Wearing Detection: Proximity sensor and two acceleration sensors in your headphones can detect whether you're wearing them or not, then adapt playback accordingly to help save battery power",
+            'Quick attention mode: Cover the right ear cup with your palm to turn down music for instant, easy conversation',
+            'Smart listening: WH-1000XM4 adjusts the ambient sound to your activity to give you the best noise cancellation',
+            'Long battery life: A single charge provides up to 30 hrs of playtime for reliable all day listening'
+          ]}
           />
           <Product
             id={2}
@@ -38,7 +48,7 @@ function Home() {
           <Product
             id={4}
             img="https://images-na.ssl-images-amazon.com/images/I/71RTgfYvg6L._SX679_.jpg"
-            title="Bigmuscles Nutrition Premium Gold Whey 2kg [Belgian Chocolate] with Free T-Shirt|Whey Protein Isolate & Whey Protein Concentrate, 25g Protein Per Serving, 0g Sugar, 5.5g BCAA"
+            title="Bigmuscles Nutrition Premium Gold Whey 2kg [Belgian Chocolate] with Free T-Shirt"
             rating={4}
             price={2249}
           />

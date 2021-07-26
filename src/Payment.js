@@ -95,9 +95,7 @@ function Payment() {
                         <h3>Delivery Address</h3>
                     </div>
                     <div className="payment__address">
-                        <p>{user?.email}</p>
-                        <p>123 react lane</p>
-                        <p>los Angeles clifornia</p>
+                      <input class = 'address_input'/>
                     </div>
                 </div>
                 <div className="payment__section">
@@ -135,7 +133,7 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={"₹"}
                                 />
-                                <button disabled={processing || disabled || succeeded} >
+                                <button class = 'buy' disabled={processing || disabled || succeeded} >
                                     <span>{processing ? <p>processing</p> : "Buy Now"}</span>
                                 </button>
                             </div>

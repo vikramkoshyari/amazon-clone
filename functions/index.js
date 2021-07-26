@@ -32,4 +32,4 @@ app.post('/payments/create', async (req, res) => {
 
 exports.api = functions.https.onRequest(app)
 
-//http://localhost:5001/clone-1de8a/us-central1/api
+// http://localhost:5001/clone-1de8a/us-central1/api

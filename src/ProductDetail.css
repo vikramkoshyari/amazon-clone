@@ -1,0 +1,179 @@
+.product_detail{
+  background-color: white;
+  height: 200vh;
+  display: flex
+}
+
+
+.product_image{
+  width: 600px;
+  height: 500px;
+  margin: 10px 20px 0 50px
+}
+
+.product_image > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product_data{
+  display: flex;
+  flex-direction: column;
+}
+
+.sale_banner{
+  width: 100%;
+  height: 80px;
+  text-align:center;
+  margin-top: 5px
+}
+
+.parent{
+  background-color: white;
+  height: 100vh;
+}
+
+.category{
+  width: 100%;
+  background-color: #cfcfcf;
+  font-size: 12px;
+  color: #383838
+}
+
+.category > p{
+  margin-left: 10px;
+}
+
+.product__rating{
+  margin-top: 5px
+}
+
+.product__price{
+  margin-top: 10px
+}
+.product__price:not(.product_price > span){
+  color: #B12704
+}
+
+.label{
+  color: #565959
+}
+
+.delivery{
+  color: #000;
+  margin-top: 10px;
+}
+
+.date{
+  font-weight: bold;
+}
+
+.offers_container{
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 500px;
+  border-bottom: 1px solid #cfcfcf
+}
+
+.offer_title{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 10px
+
+}
+
+.offer_title > p{
+  flex: 2;
+  padding: 10px;
+
+}
+
+.burgandy{
+  color: #B12704;
+  font-weight: bold
+}
+
+.offer{
+  padding: 10px;
+  border-bottom: 1px solid #cfcfcf;
+
+}
+
+.policies{
+  display: flex;
+  width: 500px;
+  margin-top:15px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.icon_container{
+  width: 40px;
+  height: 40px
+}
+
+.icon_container > img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.column > p{
+  font-size: 12px;
+  color: #007185;
+  margin-top: 10px
+}
+
+.seperator{
+  border-bottom: 1px solid #cfcfcf;
+  width: 500px;
+  margin-top:5px
+}
+
+.about{
+  margin-top: 15px;
+}
+
+.about > h3{
+  margin-left: 21px
+}
+
+.list{
+  width: 500px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+button{
+  width:150px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ffd729;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer
+}
+
+button:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 3px rgb(0,0,0,0.1)
+}
+
+button:active{
+  transform: scale(1.1);
+
+}
+
+.buy_now{
+  background-color: #ff9900
+}

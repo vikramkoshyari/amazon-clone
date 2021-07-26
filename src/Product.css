@@ -28,10 +28,21 @@
 .product__info {
   height: 100px;
   margin-bottom: 14px;
+  text-align: left;
+  width: 100%
 }
 .product__price {
   margin-top: 5px;
 }
 .product__rating {
   display: flex;
+}
+
+.product_title{
+  color: black;
+  font-size: 20px;
+}
+
+.product_title:hover{
+  text-decoration: underline;
 }
